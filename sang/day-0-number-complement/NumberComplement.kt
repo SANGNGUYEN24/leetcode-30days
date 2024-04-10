@@ -1,4 +1,4 @@
-class Solution {
+class NumberComplement {
     fun findComplement(num: Int): Int {
         return converBinaryToDecimal(convertDecimalToBinary(num).reversed())
     }
@@ -25,7 +25,7 @@ class Solution {
 
         for (i in (complementStr.length - 1) downTo 0) {
             val digit = complementStr.get(i)
-            if (digit == '0'){
+            if (digit == '0') {
                 continue
             }
             dNum += Math.pow(2.0, i.toDouble())
